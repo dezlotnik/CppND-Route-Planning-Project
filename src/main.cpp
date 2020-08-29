@@ -70,7 +70,9 @@ int main(int argc, const char **argv)
 
     // Create RoutePlanner object and perform A* search.
     RoutePlanner route_planner{model, start_x, start_y, end_x, end_y};
+    std::cout<<"Starting A star search\n";
     route_planner.AStarSearch();
+    std::cout<<"End A star search\n";
 
     std::cout << "Distance: " << route_planner.GetDistance() << " meters. \n";
 
